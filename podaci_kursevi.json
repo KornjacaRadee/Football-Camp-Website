@@ -1,0 +1,101 @@
+{
+    "kursevi": {
+        "11111111111": {
+            "id": 11111111111,
+            "naziv": "Košarkaški kamp",
+            "autor": "Vujko Brahović",
+            "datumIzmene": "21-7-2021",
+            "opis": "Košarkaški kamp na Zlatiboru kao i svake godine održava se u junu. Cilj kampa je približavanje sporta deci. Učenje fer pleja i stvaranje novih prijateljstava.",
+            "slika": "images/basketnmp.png",
+            "cena": 249.99,
+            "brojLekcija": 14,
+            "kategorija": "Sport",
+            "jezik": "Srpski",
+            "prosecnaOcena": 4.7,
+            "brojKorisnika": 321,
+            "sertifikovan": "Da"
+        },
+        "11111111112": {
+            "id": 11111111112,
+            "naziv": "Fudbalski Kamp",
+            "autor": "Ilija Djurkvic",
+            "datumIzmene": "17-7-2021",
+            "opis": "Fudbalski kamp na Krupnju održaće se prvi put u januaru i julu. Cilj kampa je uočavanje grešaka i uklanjanje istih. U čemu će pomoći mnogo poznatih trenera.",
+            "slika": "images/footballnmp.png",
+            "cena": 249.99,
+            "brojLekcija": 14,
+            "kategorija": "Sport",
+            "jezik": "Srpski",
+            "prosecnaOcena": 4.1,
+            "brojKorisnika": 172,
+            "sertifikovan": "Da"
+        },
+        "11111111113": {
+            "id": 11111111113,
+            "naziv": "Odbojkaški kamp",
+            "autor": "Lazar Filipovic",
+            "datumIzmene": "28-7-2021",
+            "opis": "Odbojkaški kamp Grzi održaće se prvi put u našoj ponudi. Cilj kampa je učenje fer pleja i stvaranje novih nada ovog sporta.",
+            "slika": "images/volleyballnmp.png",
+            "cena": 249.99,
+            "brojLekcija": 14,
+            "kategorija": "Sport",
+            "jezik": "Srpski",
+            "prosecnaOcena": 4.9,
+            "brojKorisnika": 91,
+            "sertifikovan": "Ne"
+        }
+    },
+    "korisnici": {
+        "-MNQo55Aw0tLdwahMZMK": {
+            "adresa": "Gogoljeva 39, Novi Sad",
+            "datumRodjenja": "1994-10-22",
+            "email": "ppetrovic@webd.com",
+            "ime": "Petar",
+            "lozinka": "petar123",
+            "prezime": "Petrović",
+            "telefon": "061456456",
+            "korisnickoIme": "petar"
+        },
+        "-MNQoCqEXydVTdCNV47C": {
+            "adresa": "Jug Bogdana 14, Zrenjanin",
+            "datumRodjenja": "1982-05-05",
+            "email": "jjovanovic@webd.com",
+            "ime": "Jovana",
+            "lozinka": "jovana123",
+            "prezime": "Jovanović",
+            "telefon": "062321321",
+            "korisnickoIme": "jovana"
+        },
+        "-MNQoJw2p9rci4Rm_rYY": {
+            "adresa": "Cara Lazara 9a, Kragujevac",
+            "datumRodjenja": "1990-09-17",
+            "email": "mmarkovic@webd.com",
+            "ime": "Marko",
+            "lozinka": "marko123",
+            "prezime": "Marković",
+            "telefon": "063876876",
+            "korisnickoIme": "marko"
+        },
+        "-MNQoR-5erkWvcm8Hdnk": {
+            "adresa": "Solunska 5, Niš",
+            "datumRodjenja": "1973-03-10",
+            "email": "ffilipovic@webd.com",
+            "ime": "Filip",
+            "lozinka": "filip123",
+            "prezime": "Filipović",
+            "telefon": "064159159",
+            "korisnickoIme": "filip"
+        },
+        "-MNQoWt_gDudX5W8TLQj": {
+            "adresa": "Ružićeva 32, Beograd",
+            "datumRodjenja": "1998-06-29",
+            "email": "ttijanic@webd.com",
+            "ime": "Tijana",
+            "lozinka": "tijana123",
+            "prezime": "Tijanić",
+            "telefon": "065753753",
+            "korisnickoIme": "tijana"
+        }
+    }
+}

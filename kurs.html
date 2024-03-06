@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tittle.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body id="course-page">
+    <header>
+        <div class="navbar">
+
+            <ul>
+                <li>
+                    <a id="logo" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </li>
+                <li><a href="#footer-main">O NAMA</a></li>
+                <li><a href="#footer-main">KONTAKT</a></li>
+                <li><a href="#camps">KAMPOVI</a></li>
+            </ul>
+            <div class="navbar-right">
+                <input id="searchBar" onfocusin="showDiv()" onfocusout="hideDiv()" type="text" list="suggestions" placeholder="Pretraga">
+                <datalist id="suggestions">
+                    <option>Fudbalski kamp</option>
+                    <option>Odbojkaški kamp</option>
+                    <option>Košarkaški kamp</option>
+                    <option>Vujko Brahović</option>
+                    <option>Ilija Djurković</option>
+                    <option>Lazar Filipović</option>
+                </datalist>
+                <a id="login" onclick="OpenLogin()">Ulogujte se</a>
+                <a id="join" onclick="OpenRegister()">
+                    <h2>Pridružite se</h2>
+                </a>
+
+
+            </div>
+        </div>
+    </header>
+    <div class="searchbg" id="search-bg">
+
+    </div>
+    <div class="wrapper-course">
+        <div class="course-header">
+            <h2 id="naziv-kursa" class="ime-kursa1"></h2>
+            <h6>O kampu</h6>
+            <p id="opis-kursa" class="opis-kursa1"></p>
+            <a id="button-change" href="izmenakursa.html">
+                <h3>Izmeni podatke</h3>
+            </a>
+        </div>
+        <div class="course-card">
+            <img src="images/basketnmp.png" id="course-image" alt="slika kosarkasa malih">
+            <h5 id="course-price"></h5>
+            <h3 class="buynow" id="addToCartBtn">Dodaj u korpu</h3>
+            <table class="table-info-course" id="table-course">
+            </table>
+        </div>
+        <div class="cart-icon" onclick="Cart()">
+            <img src="images/cart.png">
+        </div>
+        <div class="cart" id="cart">
+            <h2>Vaša korpa</h2>
+            <hr>
+            <h3>Nastavite na plaćanje</h3>
+
+        </div>
+    </div>
+    <div class="loginbg users-login" id="loginbg">
+        <div class="loginwin">
+            <h3 class="x" onclick="CloseLogin()">X</h3>
+            <div class="blackbg">
+                <h2>Ulogujte se</h2>
+            </div>
+            <form action="https://sportskikampovi-8c0e5-default-rtdb.europe-west1.firebasedatabase.app/korisnici" method="GET" id="login-form">
+                <div class="username">
+                    <label>Korisničko ime:</label>
+                    <input type="text" name="username" id="login-name">
+                </div>
+                <div class="password">
+                    <label>Korisnička šifra:</label>
+                    <input type="password" name="password" id="login-password">
+                </div>
+                <button class="submit" type="submit" value="Završi">Završi</button> </div>
+        </form>
+
+    </div>
+    <div class="registerbg" id="registerbg">
+        <div class="registerwin">
+            <h3 class="x" onclick="CloseRegister()">X</h3>
+            <div class="blackbg">
+                <h3>Registrujte se</h3>
+            </div>
+            <form action="https://sportskikampovi-8c0e5-default-rtdb.europe-west1.firebasedatabase.app/korisnici" method="GET" id="register-form">
+
+                <label>E-mail</label>
+                <input type="email" name="email" id="register-email">
+                <br>
+                <label>Korisničko ime</label>
+                <input type="text" name="username" id="register-username">
+                <br>
+                <label>Korisnička šifra</label>
+                <input type="password" name="password" id="register-password">
+                <br>
+
+                <label>Telefon</label>
+                <input type="tel" name="phone" pattern="[0-9]{3}[0-9]{7}" id="register-telephone">
+                <br>
+                <label> Datum rodjenja</label>
+                <input type="date" name="date" id="register-date">
+                <br>
+                <label> Ime</label>
+                <input type="text" name="name" id="register-name">
+                <br>
+                <label> Prezime</label>
+                <input type="text" name="lastname" id="register-lastname">
+                <br>
+                <label> Adresa</label>
+                <input type="text" name="address" id="register-address">
+
+                <button type="submit" name="submit" class="submit">Registrujte se</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="bottom1" id="bottom2"></div>
+    <footer id="footer-main" class="footer-main footer-users">
+
+        <div class="footer-left">
+
+            <h3>Sportski Kampovi</h3>
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Naslovna</a>
+
+                <a href="#camps">Kampovi</a>
+
+                <a href="users.html">Korisnici</a>
+
+                <a id="login" onclick="OpenLogin()">Ulogujte se</a>
+            </p>
+
+            <p class="footer-name">Sportski Kampovi © 2010</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+
+                <p><span>20. oktobar 92</span> Bačka Palanka, Srbija</p>
+            </div>
+
+            <div>
+                <p>+381/603139887</p>
+            </div>
+
+            <div>
+
+                <p><a href="mailto:support@sportskikampovi.com">support@sportskikampovi.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p id="footer-about" class="footer-about">
+                <span>O nama</span> Imamo cilj da Vašu decu usrećimo. To radimo uspešno već 11godina. Tim odličnih trenera i rekreatora u jednoj organizaciji samo za Vas.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="facebook icon"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="https://instagram.com/djurica_11"><img src="images/instagram.png"></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="kurs.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script src="login.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>

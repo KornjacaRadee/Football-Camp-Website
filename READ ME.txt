@@ -1,0 +1,2 @@
+Na liveserveru slike se ne ucitavaju lepo. Dok samo pokretanjem rade.
+Korpa nema ucitane kurseve ali klikom na dodaj u korpu se oni dodaju.
